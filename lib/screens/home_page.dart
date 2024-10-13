@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                GoRouter.of(context).go("/profile/child");
+                GoRouter.of(context).push("/profile/child");
               },
               child: const Text("go to Child page"),
             ),
@@ -40,7 +40,8 @@ class HomePage extends StatelessWidget {
 
                 //path parameters
                 const String name = "Tharindu Nirmal";
-                GoRouter.of(context).go("/user/$name");
+                const String lName = "ranshika";
+                GoRouter.of(context).go("/user/$name/$lName");
               },
               child: const Text("User page"),
             )

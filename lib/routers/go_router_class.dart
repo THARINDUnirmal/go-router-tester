@@ -66,9 +66,10 @@ class GoRouterClass {
 
       //page path parameter
       GoRoute(
-        path: "/user/:name",
+        path: "/user/:name/:lname",
         builder: (context, state) {
           return UserScreen(
+            lastName: state.pathParameters["lname"]!,
             name: state.pathParameters["name"]!,
           );
         },
