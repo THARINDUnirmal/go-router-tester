@@ -23,6 +23,12 @@ class ChildPage extends StatelessWidget {
                 GoRouter.of(context).go("/profile");
               },
               child: const Text("go to profile page"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                GoRouter.of(context).go("/");
+              },
+              child: const Text("go to Home page"),
             )
           ],
         ),

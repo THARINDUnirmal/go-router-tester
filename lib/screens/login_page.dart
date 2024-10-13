@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class LogInPage extends StatelessWidget {
+  const LogInPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +17,6 @@ class HomePage extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
             ),
-            // ElevatedButton(
-            //   onPressed: () {},
-            //   child: const Text("go to profile page"),
-            // )
           ],
         ),
       ),
